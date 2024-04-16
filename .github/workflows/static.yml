@@ -31,8 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Build
-        run: npm install --workspace=packages/static-site && npm run build --workspace=packages/static-site
+      - name: Build component library
+        run: npm install -w component && npm run build -w component
+      - name: Build static site
+        run: npm install -w static-site && npm run build -w static-site
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
