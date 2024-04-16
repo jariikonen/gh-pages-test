@@ -1,13 +1,13 @@
 {
-  "name": "gh-pages-test",
+  "name": "gh-pages-test-monorepo",
   "version": "0.0.0",
   "description": "Testing gh-pages publishing from a monorepo",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jari",
   "workspaces": [
-    "packages/static-site"
+    "packages/static-site",
+    "packages/component"
   ]
 }
